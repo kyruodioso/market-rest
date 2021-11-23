@@ -1,0 +1,25 @@
+@api = http://localhost:3000
+
+GET {{api}}/productos
+
+###
+
+GET {{api}}/productos/619c647ac7df828daeaa3be6
+
+###
+
+POST {{api}}/productos
+Content-Type: application/json
+
+{
+    "title":"Notebook",
+    "description":"Lenovo",
+    "image":"./imagenes/lenovo.jpg",
+    "price":"50.00"
+}
+
+###
+DELETE {{api}}/productos/1
+
+###
+PUT {{api}}/productos/1
